@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const experiences = [
   {
     role: "Senior Software Engineer",
@@ -47,6 +51,7 @@ const projects = [
       "A clinical documentation platform that turns dictated patient encounters into structured records for secure external submission.",
     tags: ["Flutter", "Speech recognition", "AI", "RBAC"],
     href: "https://dictate.cascade.md",
+    image: `${basePath}/projects/cascade.png`,
     className: "project-cascade",
   },
   {
@@ -56,6 +61,7 @@ const projects = [
     description:
       "A field-workforce app for attendance, shift activity, and location compliance with geofencing and background monitoring.",
     tags: ["Geofencing", "Background tasks", "Firebase"],
+    image: `${basePath}/projects/seequince.png`,
     className: "project-seequince",
   },
   {
@@ -66,6 +72,7 @@ const projects = [
       "A scalable cross-platform sports betting experience with secure authentication, subscriptions, deep links, and location-aware features.",
     tags: ["Clean architecture", "Payments", "Deep links"],
     href: "https://play.google.com/store/apps/details?id=com.lektik.sprinkle",
+    image: `${basePath}/projects/sprinkle.png`,
     className: "project-sprinkle",
   },
   {
@@ -76,6 +83,7 @@ const projects = [
       "An AI-powered biography platform combining guided storytelling with speech, audio, multimedia, and cross-platform publishing.",
     tags: ["Android / iOS / Web", "Audio", "AI"],
     href: "https://app.narraited.com",
+    image: `${basePath}/projects/narraited.png`,
     className: "project-narraited",
   },
   {
@@ -85,15 +93,49 @@ const projects = [
     description:
       "A secure government health-data app designed for accessibility, with SSL pinning, root detection, obfuscation, and screenshot protection.",
     tags: ["Kotlin", "SSL pinning", "Accessibility"],
+    image: `${basePath}/projects/ashadhara.png`,
     className: "project-ashadhara",
+  },
+];
+
+const moreProducts = [
+  {
+    name: "Employee Management",
+    type: "Workforce operations",
+    detail: "Attendance, payroll workflows, announcements, and role-based access.",
+    tech: "Flutter · GetX MVVM · FCM",
+  },
+  {
+    name: "GreenWealth",
+    type: "E-commerce",
+    detail: "Product discovery, cart, checkout, orders, and secure payments.",
+    tech: "Flutter · BigCommerce",
+  },
+  {
+    name: "Job Search Platform",
+    type: "Marketplace",
+    detail: "Location-aware job discovery connecting vehicle owners and companies.",
+    tech: "Flutter · GetX · Location",
+  },
+  {
+    name: "Petty",
+    type: "Social & dating",
+    detail: "Swipe discovery, matching, real-time chat, and media sharing.",
+    tech: "Flutter · Real-time chat",
+  },
+  {
+    name: "Academy Management",
+    type: "Business operations",
+    detail: "Enrollment, attendance, scheduling, subscriptions, and reporting.",
+    tech: "Flutter · Stripe · IAP",
   },
 ];
 
 const skillGroups = [
   {
     number: "01",
-    title: "Mobile & frontend",
-    skills: ["Flutter", "Dart", "React", "Tailwind CSS", "Jetpack Compose", "Responsive UI"],
+    title: "Product engineering",
+    skills: ["Flutter", "React", "FastAPI", "Tailwind CSS", "Jetpack Compose", "Responsive UI"],
   },
   {
     number: "02",
@@ -139,8 +181,8 @@ export default function Home() {
   return (
     <main id="top">
       <header className="nav shell">
-        <a className="logo" href="#top" aria-label="Akhil V S, home">
-          AVS<span>/</span>
+        <a className="brand-logo" href="#top" aria-label="Akhil V S, home">
+          <Image src={`${basePath}/logo_akhil.png`} alt="" fill priority sizes="90px" />
         </a>
         <nav aria-label="Primary navigation">
           <a href="#about">About</a>
@@ -157,35 +199,24 @@ export default function Home() {
         <div className="hero-intro">
           <p className="kicker"><span>Senior Software Engineer</span> Kerala, India</p>
           <h1>
-            I build mobile products that work in the <em>real world.</em>
+            Hi! I&apos;m <em>Akhil.</em><br />I build mobile &amp; web products.
           </h1>
           <p className="hero-copy">
-            Five-plus years turning complex workflows into reliable Flutter experiences across Android, iOS, and web—from clinical documentation to field operations.
+            Five-plus years turning complex workflows into reliable mobile and web products—from clinical documentation and AI platforms to field operations and commerce.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#work">Explore selected work <Arrow /></a>
-            <a className="button button-secondary" href="/resume">Download résumé <Arrow diagonal /></a>
+            <a className="button button-secondary" href={`${basePath}/Akhil-VS-Resume.pdf`} download>Download résumé <Arrow diagonal /></a>
           </div>
         </div>
 
-        <aside className="hero-panel" aria-label="Engineering profile highlights">
-          <div className="panel-top">
-            <span className="window-dots"><i /><i /><i /></span>
-            <span>profile.json</span>
-          </div>
-          <div className="code-card">
-            <p><span>01</span><code>{`{`}</code></p>
-            <p><span>02</span><code><b>"focus"</b>: <em>"mobile systems"</em>,</code></p>
-            <p><span>03</span><code><b>"platforms"</b>: [<em>"iOS"</em>, <em>"Android"</em>, <em>"Web"</em>],</code></p>
-            <p><span>04</span><code><b>"mindset"</b>: <em>"ship, measure, improve"</em>,</code></p>
-            <p><span>05</span><code><b>"domains"</b>: [<em>"AI"</em>, <em>"healthcare"</em>, <em>"commerce"</em>]</code></p>
-            <p><span>06</span><code>{`}`}</code></p>
-          </div>
-          <div className="panel-metric">
-            <strong>30%</strong>
-            <span>fewer crashes<br />through targeted optimization</span>
-          </div>
-          <div className="floating-mark"><CodeMark /></div>
+        <aside className="hero-panel" aria-label="Portrait of Akhil V S">
+          <Image src={`${basePath}/hero-portrait-v2.png`} alt="Akhil V S in an orange sweatshirt" fill priority sizes="(max-width: 960px) 100vw, 42vw" />
+          <div className="portrait-ring ring-one" />
+          <div className="portrait-ring ring-two" />
+          <div className="profile-badge badge-top"><span>✦</span><div><strong>5+ years</strong><small>Production engineering</small></div></div>
+          <div className="profile-badge badge-bottom tech-badge"><span>⌘</span><div><strong>Flutter · React · FastAPI</strong><small>Mobile · Web · APIs</small></div></div>
+          <div className="profile-orbit">30%<small>fewer crashes</small></div>
         </aside>
 
         <div className="hero-stats" aria-label="Career highlights">
@@ -197,8 +228,8 @@ export default function Home() {
 
       <section className="ticker" aria-label="Core technologies">
         <div>
-          <span>Flutter</span><i>✦</i><span>Dart</span><i>✦</i><span>Firebase</span><i>✦</i>
-          <span>AWS</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>CI/CD</span><i>✦</i>
+          <span>Flutter</span><i>✦</i><span>FastAPI</span><i>✦</i><span>Firebase</span><i>✦</i>
+          <span>AWS</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>React</span><i>✦</i>
           <span>AI integrations</span>
         </div>
       </section>
@@ -258,8 +289,9 @@ export default function Home() {
             const externalProps = project.href ? { href: project.href, target: "_blank", rel: "noreferrer" } : {};
             return (
               <Tag className={`project-card ${project.className} ${index === 0 ? "project-featured" : ""}`} key={project.name} {...externalProps}>
+                <Image className="project-image" src={project.image} alt="" fill sizes={index === 0 ? "(max-width: 680px) 100vw, 1180px" : "(max-width: 680px) 100vw, 580px"} />
+                <div className="project-shade" />
                 <div className="project-top"><span>{project.index}</span>{project.href && <Arrow diagonal />}</div>
-                <div className="project-graphic" aria-hidden="true"><b>{project.name.slice(0, 2)}</b><i /><i /></div>
                 <div className="project-content">
                   <p>{project.category}</p>
                   <h3>{project.name}</h3>
@@ -269,6 +301,26 @@ export default function Home() {
               </Tag>
             );
           })}
+        </div>
+        <div className="more-work">
+          <div className="more-work-heading">
+            <div>
+              <span>AND THERE&apos;S MORE</span>
+              <h3>More products shipped.</h3>
+            </div>
+            <strong>10</strong>
+            <p>products represented across the portfolio</p>
+          </div>
+          <div className="more-work-list">
+            {moreProducts.map((product, index) => (
+              <article key={product.name}>
+                <span>{String(index + 6).padStart(2, "0")}</span>
+                <div><small>{product.type}</small><h4>{product.name}</h4></div>
+                <p>{product.detail}</p>
+                <em>{product.tech}</em>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -306,12 +358,12 @@ export default function Home() {
       </section>
 
       <footer className="footer shell">
-        <a className="logo" href="#top">AVS<span>/</span></a>
+        <a className="brand-logo" href="#top" aria-label="Akhil V S, home"><Image src={`${basePath}/logo_akhil.png`} alt="" fill sizes="90px" /></a>
         <p>© {new Date().getFullYear()} Akhil V S · Senior Software Engineer</p>
         <div>
           <a href="https://www.linkedin.com/in/akhil15111993" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/akhil111993" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="/resume">Résumé</a>
+          <a href={`${basePath}/Akhil-VS-Resume.pdf`}>Résumé</a>
         </div>
       </footer>
     </main>
