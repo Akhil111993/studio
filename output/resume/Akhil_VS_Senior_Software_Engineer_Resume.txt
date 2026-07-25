@@ -1,0 +1,63 @@
+AKHIL V S
+Senior Software Engineer | Cross-Platform Mobile, Web & Cloud
+Irinjalakuda, Kerala, India | +91 9497342691 | akhil.15111993@gmail.com
+LinkedIn: linkedin.com/in/akhil15111993 | Portfolio: akhil111993.github.io/portfolio/
+
+SUMMARY
+Senior Software Engineer with 5+ years of experience building production applications across Android, iOS, and web. Delivers end-to-end product systems spanning Flutter and React interfaces, FastAPI services, Firebase and PostgreSQL data, AI-assisted workflows, payments, and cloud deployment. Experienced in scalable architecture, CI/CD, code review, and mentoring engineers across healthcare, workforce, commerce, and consumer products.
+
+EXPERIENCE
+
+Senior Software Engineer | Lektik Consulting
+Sep 2023 - Present | Infopark, Kakkanad, Kerala
+- Build cross-platform healthcare, AI-assisted documentation, and enterprise workflow products for Android, iOS, and web.
+- Deliver speech recognition, AI-generated clinical documentation, REST API and Firebase integrations, AppsFlyer analytics, payments, and cloud-connected features.
+- Establish scalable Flutter architecture with BLoC and Provider, automate delivery with GitHub Actions, and mentor junior developers through code reviews and technical guidance.
+
+Flutter Developer | Reubro International
+Jan 2022 - Aug 2023 | Kochi, Kerala
+- Delivered Flutter products across social, dating, e-commerce, job-search, workforce, and web use cases.
+- Integrated REST APIs, Firebase, BigCommerce, payments, and third-party services while improving release workflows through GitHub Actions.
+- Reduced application crash rates by 30% through performance tuning, crash analytics, targeted bug fixes, and maintenance of legacy Java and Kotlin applications.
+
+Flutter Developer | Instyart Private Limited
+Jan 2021 - Dec 2021 | Remote
+- Built an academy operations platform covering enrollment, attendance, scheduling, instructor management, role-based access, and reporting.
+- Implemented subscriptions and payments with Stripe, Apple In-App Purchase, and Google Play Billing.
+- Delivered notifications, reminders, and operational analytics for revenue, attendance, and student activity.
+
+SELECTED PROJECTS
+
+CascadeMD | Lektik Consulting | Nov 2025 - Present
+dictate.cascade.md
+- Architected an AI-assisted clinical documentation platform that turns dictated patient encounters into structured records for submission to a U.S. government service.
+- Built speech recognition, role-based access, and secure external-submission workflows across mobile and web, reducing manual documentation steps for clinicians.
+
+Seequince | Lektik Consulting | Jan 2026 - Mar 2026
+- Built and published a field-workforce application for attendance, shift activity, and location compliance.
+- Implemented GPS geofencing, background location monitoring, automatic out-of-boundary session termination, scheduled tasks, and Firebase notifications.
+
+Sprinkle | Lektik Consulting | Jul 2024 - Nov 2025
+play.google.com/store/apps/details?id=com.lektik.sprinkle
+- Developed a cross-platform sports betting application using Flutter, clean architecture, and modular state management.
+- Delivered authentication, subscriptions, payments, deep linking, local persistence, embedded web content, and location- and timezone-aware features.
+
+Narraited (Android, iOS & Web) | Lektik Consulting | 2023 - 2025
+app.narraited.com
+- Built an AI-powered biography platform with structured, chapter-based storytelling across mobile and web.
+- Integrated speech recognition, recording and playback, multimedia, push notifications, responsive UI, and email, Google, and Apple sign-in.
+
+Ashadhara | Reubro International | Oct 2021 - Dec 2021
+- Developed a Kotlin application for a government health initiative, with an accessible questionnaire for users with limited digital literacy.
+- Implemented SSL pinning, root detection, code obfuscation, screenshot protection, and automatic closure on compromised devices.
+
+CORE SKILLS
+Cross-platform engineering: Flutter, Dart, React, Tailwind CSS, Jetpack Compose, responsive UI
+Architecture & state: BLoC, Riverpod, Provider, GetX, clean architecture, design systems
+Backend & data: Python, FastAPI, REST APIs, GraphQL, WebSockets, PostgreSQL, Firebase
+Cloud & delivery: AWS ECS/ECR/RDS, Azure App Service, Docker, GitHub Actions, Codemagic
+Product systems: AI integrations, payments and subscriptions, authentication, geofencing, deep linking, FCM, Crashlytics, AppsFlyer, mobile security
+
+EDUCATION
+Master of Computer Applications | Indira Gandhi National Open University | Expected 2026
+Bachelor of Technology in Mechanical Engineering | Universal Engineering College | 2016

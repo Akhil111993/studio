@@ -5,39 +5,40 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const experiences = [
   {
     role: "Senior Software Engineer",
-    company: "Lektik Consulting",
+    company: "Lektik",
     period: "Sep 2023 — Present",
-    location: "Kakkanad, Kerala",
+    location: "Infopark, Kakkanad",
     summary:
-      "Building healthcare, AI-assisted documentation, and enterprise workflow products across mobile and web.",
+      "Leading AI-driven product development across mobile and web—owning requirement analysis, architecture, UI, performance, and deployment.",
     highlights: [
-      "Ship speech recognition, AI-generated clinical documentation, payment flows, Firebase services, and cloud-connected features.",
-      "Shape scalable Flutter architecture with BLoC and Provider while establishing CI/CD workflows with GitHub Actions.",
-      "Mentor junior developers through code reviews, technical guidance, and collaborative delivery.",
+      "Led delivery of AI-powered platforms including an AI biography product and a sports application, shipped on mobile and web.",
+      "Collaborate with backend teams on RESTful APIs in FastAPI, keeping data flows and end-to-end functionality reliable.",
+      "Maintain modular architecture for large-scale projects, run code reviews, and resolve performance and device-compatibility issues.",
+      "Work across the full stack with Flutter, React, HTML, CSS, Kotlin, Java, and Git, including native integration via MethodChannel.",
     ],
   },
   {
     role: "Flutter Developer",
     company: "Reubro International",
-    period: "Jan 2022 — Aug 2023",
-    location: "Kochi, Kerala",
+    period: "Apr 2022 — Aug 2023",
+    location: "Ernakulam",
     summary:
-      "Delivered social, commerce, workforce, job-search, and dating products for Android, iOS, and web.",
+      "Lead Flutter and Android developer across e-commerce, employee management, social, and healthcare products.",
     highlights: [
-      "Integrated REST APIs, Firebase, BigCommerce, and third-party platforms across production applications.",
-      "Reduced application crash rates by 30% through performance tuning, analytics, and targeted maintenance.",
+      "Integrated REST APIs, Firebase, BigCommerce, and third-party platforms across production mobile and web applications.",
+      "Reduced application crash rates by 30% through performance tuning, crash analytics, and maintenance of legacy Java and Kotlin apps.",
     ],
   },
   {
-    role: "Flutter Developer",
-    company: "Instyart Private Limited",
-    period: "Jan 2021 — Dec 2021",
-    location: "Remote",
+    role: "Software Engineer",
+    company: "D Consultancy",
+    period: "Dec 2016 — Mar 2022",
+    location: "Kerala, India",
     summary:
-      "Built an operations platform for dance and music academies, from enrollment and attendance to subscriptions and reporting.",
+      "Built native Android applications in Java and Kotlin, including government and public-transport projects.",
     highlights: [
-      "Integrated Stripe, Apple In-App Purchase, and Google Play Billing for flexible subscription workflows.",
-      "Delivered role-based access, reminders, notifications, and analytics for daily academy operations.",
+      "Delivered Ashadhara, a secure government health-data application with hardened device and network protections.",
+      "Built KMRL Connect for Kochi Metro businesses, alongside a range of native Android products.",
     ],
   },
 ];
@@ -128,6 +129,12 @@ const moreProducts = [
     type: "Business operations",
     detail: "Enrollment, attendance, scheduling, subscriptions, and reporting.",
     tech: "Flutter · Stripe · IAP",
+  },
+  {
+    name: "KMRL Connect",
+    type: "Public transport",
+    detail: "Native Android app supporting businesses operating with Kochi Metro.",
+    tech: "Android · Java · Kotlin",
   },
 ];
 
