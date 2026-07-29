@@ -11,17 +11,18 @@ const experiences = [
     summary:
       "Leading AI-driven product development across mobile and web—owning requirement analysis, architecture, UI, performance, and deployment.",
     highlights: [
-      "Led delivery of AI-powered platforms including an AI biography product and a sports application, shipped on mobile and web.",
-      "Collaborate with backend teams on RESTful APIs in FastAPI, keeping data flows and end-to-end functionality reliable.",
-      "Maintain modular architecture for large-scale projects, run code reviews, and resolve performance and device-compatibility issues.",
-      "Work across the full stack with Flutter, React, HTML, CSS, Kotlin, Java, and Git, including native integration via MethodChannel.",
+      "Helped CascadeMD achieve SOC 2 compliance while supporting secure clinical workflows processing 15,000+ submissions per month.",
+      "Improved CascadeMD performance by 53% through targeted usability, scalability, and cross-platform performance enhancements.",
+      "Built Sprinkle for 5,000+ users and pioneered a backend-driven sports system that reduced development effort by 40% and crash rates by 32%.",
+      "Optimized Narraited’s Azure infrastructure, reducing monthly hosting costs from $941.85 to under $100—a saving of more than 90%.",
+      "Mentor junior developers through code reviews and technical guidance while maintaining scalable Flutter architecture and CI/CD workflows.",
     ],
   },
   {
     role: "Flutter Developer",
     company: "Reubro International",
     period: "Apr 2022 — Aug 2023",
-    location: "Ernakulam",
+    location: "Kochi, Kerala",
     summary:
       "Lead Flutter and Android developer across e-commerce, employee management, social, and healthcare products.",
     highlights: [
@@ -30,15 +31,16 @@ const experiences = [
     ],
   },
   {
-    role: "Software Engineer",
-    company: "D Consultancy",
-    period: "Dec 2016 — Mar 2022",
-    location: "Kerala, India",
+    role: "Software Consultant",
+    company: "Freelance",
+    period: "Jan 2021 — Mar 2022",
+    location: "Remote",
     summary:
-      "Built native Android applications in Java and Kotlin, including government and public-transport projects.",
+      "Built an end-to-end operations platform for dance and music academies.",
     highlights: [
-      "Delivered Ashadhara, a secure government health-data application with hardened device and network protections.",
-      "Built KMRL Connect for Kochi Metro businesses, alongside a range of native Android products.",
+      "Delivered enrollment, attendance, class scheduling, instructor management, reporting, and role-based access.",
+      "Engineered subscriptions and payments with Stripe, Apple In-App Purchase, and Google Play Billing.",
+      "Added notifications, reminders, and analytics for revenue, attendance, and student engagement.",
     ],
   },
 ];
@@ -49,8 +51,8 @@ const projects = [
     name: "CascadeMD",
     category: "Healthcare · AI documentation",
     description:
-      "A clinical documentation platform that turns dictated patient encounters into structured records for secure external submission.",
-    tags: ["Flutter", "Speech recognition", "AI", "RBAC"],
+      "An AI-powered clinical documentation platform processing 15,000+ submissions each month for a U.S. government healthcare service, with SOC 2-compliant workflows and 53% faster performance.",
+    tags: ["Flutter", "Clinical AI", "SOC 2", "RBAC"],
     href: "https://dictate.cascade.md",
     image: `${basePath}/projects/cascade.png`,
     className: "project-cascade",
@@ -58,10 +60,10 @@ const projects = [
   {
     index: "02",
     name: "Seequince",
-    category: "Workforce · Location intelligence",
+    category: "Field operations · Location intelligence",
     description:
-      "A field-workforce app for attendance, shift activity, and location compliance with geofencing and background monitoring.",
-    tags: ["Geofencing", "Background tasks", "Firebase"],
+      "A field workforce monitoring application with refactored AI-generated code, GPS geofencing, background location tracking, scheduled processes, and Firebase notifications.",
+    tags: ["Flutter", "Geofencing", "Background tasks", "Firebase"],
     image: `${basePath}/projects/seequince.png`,
     className: "project-seequince",
   },
@@ -70,7 +72,7 @@ const projects = [
     name: "Sprinkle",
     category: "Sports · Consumer mobile",
     description:
-      "A scalable cross-platform sports betting experience with secure authentication, subscriptions, deep links, and location-aware features.",
+      "A cross-platform sports information app serving 5,000+ users, with a backend-driven sports system, authentication, payments, deep links, and location-aware features.",
     tags: ["Clean architecture", "Payments", "Deep links"],
     href: "https://play.google.com/store/apps/details?id=com.lektik.sprinkle",
     image: `${basePath}/projects/sprinkle.png`,
@@ -81,8 +83,8 @@ const projects = [
     name: "Narraited",
     category: "Generative AI · Storytelling",
     description:
-      "An AI-powered biography platform combining guided storytelling with speech, audio, multimedia, and cross-platform publishing.",
-    tags: ["Android / iOS / Web", "Audio", "AI"],
+      "An AI-powered biography platform serving 1,000+ users across mobile and web, with speech, multimedia, secure sign-in, and Azure hosting costs reduced by more than 90%.",
+    tags: ["Android / iOS / Web", "Speech", "Azure", "AI"],
     href: "https://app.narraited.com",
     image: `${basePath}/projects/narraited.png`,
     className: "project-narraited",
@@ -90,51 +92,12 @@ const projects = [
   {
     index: "05",
     name: "Ashadhara",
-    category: "Public health · Android security",
+    category: "Healthcare · Android security",
     description:
-      "A secure government health-data app designed for accessibility, with SSL pinning, root detection, obfuscation, and screenshot protection.",
+      "A healthcare app for hemophilia patients, designed for accessibility and hardened with SSL pinning, root detection, obfuscation, and screenshot protection.",
     tags: ["Kotlin", "SSL pinning", "Accessibility"],
     image: `${basePath}/projects/ashadhara.png`,
     className: "project-ashadhara",
-  },
-];
-
-const moreProducts = [
-  {
-    name: "Employee Management",
-    type: "Workforce operations",
-    detail: "Attendance, payroll workflows, announcements, and role-based access.",
-    tech: "Flutter · GetX MVVM · FCM",
-  },
-  {
-    name: "GreenWealth",
-    type: "E-commerce",
-    detail: "Product discovery, cart, checkout, orders, and secure payments.",
-    tech: "Flutter · BigCommerce",
-  },
-  {
-    name: "Job Search Platform",
-    type: "Marketplace",
-    detail: "Location-aware job discovery connecting vehicle owners and companies.",
-    tech: "Flutter · GetX · Location",
-  },
-  {
-    name: "Petty",
-    type: "Social & dating",
-    detail: "Swipe discovery, matching, real-time chat, and media sharing.",
-    tech: "Flutter · Real-time chat",
-  },
-  {
-    name: "Academy Management",
-    type: "Business operations",
-    detail: "Enrollment, attendance, scheduling, subscriptions, and reporting.",
-    tech: "Flutter · Stripe · IAP",
-  },
-  {
-    name: "KMRL Connect",
-    type: "Public transport",
-    detail: "Native Android app supporting businesses operating with Kochi Metro.",
-    tech: "Android · Java · Kotlin",
   },
 ];
 
@@ -209,11 +172,11 @@ export default function Home() {
             Hi! I&apos;m <em>Akhil.</em><br />I build mobile &amp; web products.
           </h1>
           <p className="hero-copy">
-            Five-plus years turning complex workflows into reliable mobile and web products—from clinical documentation and AI platforms to field operations and commerce.
+            5+ years shipping cross-platform products across healthcare, AI, commerce, and enterprise workflows—with measurable gains in scale, speed, reliability, and cloud cost.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#work">Explore selected work <Arrow /></a>
-            <a className="button button-secondary" href={`${basePath}/Akhil-VS-Resume.pdf`} download>Download résumé <Arrow diagonal /></a>
+            <a className="button button-secondary" href={`${basePath}/Senior-software-engineer.pdf`} download>Download résumé <Arrow diagonal /></a>
           </div>
         </div>
 
@@ -221,15 +184,15 @@ export default function Home() {
           <Image src={`${basePath}/hero-portrait-v2.png`} alt="Akhil V S in an orange sweatshirt" fill priority sizes="(max-width: 960px) 100vw, 42vw" />
           <div className="portrait-ring ring-one" />
           <div className="portrait-ring ring-two" />
-          <div className="profile-badge badge-top"><span>✦</span><div><strong>5+ years</strong><small>Production engineering</small></div></div>
+          <div className="profile-badge badge-top"><span>✦</span><div><strong>15K+ monthly</strong><small>Clinical submissions</small></div></div>
           <div className="profile-badge badge-bottom tech-badge"><span>⌘</span><div><strong>Flutter · React · FastAPI</strong><small>Mobile · Web · APIs</small></div></div>
           <div className="profile-orbit">30%<small>fewer crashes</small></div>
         </aside>
 
         <div className="hero-stats" aria-label="Career highlights">
-          <div><strong>5+</strong><span>Years building<br />production software</span></div>
-          <div><strong>3</strong><span>Platforms<br />Android · iOS · Web</span></div>
-          <div><strong>End-to-end</strong><span>From interface<br />to cloud delivery</span></div>
+          <div><strong>5+</strong><span>Years shipping<br />production software</span></div>
+          <div><strong>53%</strong><span>Performance gain<br />on CascadeMD</span></div>
+          <div><strong>90%+</strong><span>Azure hosting<br />cost reduction</span></div>
         </div>
       </section>
 
@@ -313,20 +276,10 @@ export default function Home() {
           <div className="more-work-heading">
             <div>
               <span>AND THERE&apos;S MORE</span>
-              <h3>More products shipped.</h3>
+              <h3>10+ products shipped.</h3>
             </div>
-            <strong>10</strong>
-            <p>products represented across the portfolio</p>
-          </div>
-          <div className="more-work-list">
-            {moreProducts.map((product, index) => (
-              <article key={product.name}>
-                <span>{String(index + 6).padStart(2, "0")}</span>
-                <div><small>{product.type}</small><h4>{product.name}</h4></div>
-                <p>{product.detail}</p>
-                <em>{product.tech}</em>
-              </article>
-            ))}
+            <strong>10+</strong>
+            <p>Across healthcare, AI, workforce operations, commerce, education, and public services.</p>
           </div>
         </div>
       </section>
@@ -370,7 +323,7 @@ export default function Home() {
         <div>
           <a href="https://www.linkedin.com/in/akhil15111993" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/akhil111993" target="_blank" rel="noreferrer">GitHub</a>
-          <a href={`${basePath}/Akhil-VS-Resume.pdf`}>Résumé</a>
+          <a href={`${basePath}/Senior-software-engineer.pdf`}>Résumé</a>
         </div>
       </footer>
     </main>
