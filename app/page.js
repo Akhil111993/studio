@@ -4,43 +4,37 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const experiences = [
   {
+    mark: "L",
     role: "Senior Software Engineer",
     company: "Lektik",
     period: "Sep 2023 — Present",
     location: "Infopark, Kakkanad",
+    tags: ["Flutter", "React", "FastAPI", "AWS", "PostgreSQL", "SOC 2"],
     summary:
-      "Leading AI-driven product development across mobile and web—owning requirement analysis, architecture, UI, performance, and deployment.",
+      "Lead a team of 3 engineers, driving architecture, code reviews, CI/CD, testing, and end-to-end delivery of Flutter, React, and FastAPI products through store release and post-release monitoring.",
     highlights: [
-      "Helped CascadeMD achieve SOC 2 compliance while supporting secure clinical workflows processing 15,000+ submissions per month.",
-      "Improved CascadeMD performance by 53% through targeted usability, scalability, and cross-platform performance enhancements.",
-      "Built Sprinkle for 5,000+ users and pioneered a backend-driven sports system that reduced development effort by 40% and crash rates by 32%.",
-      "Optimized Narraited’s Azure infrastructure, reducing monthly hosting costs from $941.85 to under $100—a saving of more than 90%.",
-      "Mentor junior developers through code reviews and technical guidance while maintaining scalable Flutter architecture and CI/CD workflows.",
+      "CascadeMD: Architected a cross-platform clinical documentation platform processing 15,000+ documents monthly for a U.S. government healthcare service, with role-based access, secure clinical workflows, and healthcare integrations supporting SOC 2 compliance.",
+      "Reduced a core clinical workflow's completion time by 53% (49 seconds to 23 seconds) through state management improvements, API optimization, and cross-platform performance work.",
+      "Sprinkle: Built a Flutter sports app with 20,000+ downloads and 15,000+ active users. Its backend-driven architecture lets new sports be added without frontend code changes; integrated authentication, payments, and deep links.",
+      "Narraited: Built a cross-platform AI biography app serving 1,000+ active users, with speech recognition, audio recording, and social sign-in; reduced Azure hosting costs by 90%+ ($940 to under $100 per month).",
+      "Seequince: Added GPS geofencing and background location tracking, improving core workflow completion time by 20% through codebase refactoring.",
     ],
   },
   {
+    mark: "R",
     role: "Flutter Developer",
     company: "Reubro International",
     period: "Apr 2022 — Aug 2023",
     location: "Kochi, Kerala",
+    tags: ["Flutter", "Firebase", "REST APIs", "Stripe", "Payments"],
     summary:
-      "Lead Flutter and Android developer across e-commerce, employee management, social, and healthcare products.",
+      "Delivered 5+ Flutter applications across Android, iOS, and Web, spanning e-commerce, social networking, job search, and employee management.",
     highlights: [
-      "Integrated REST APIs, Firebase, BigCommerce, and third-party platforms across production mobile and web applications.",
-      "Reduced application crash rates by 30% through performance tuning, crash analytics, and maintenance of legacy Java and Kotlin apps.",
-    ],
-  },
-  {
-    role: "Software Consultant",
-    company: "Freelance",
-    period: "Jan 2021 — Mar 2022",
-    location: "Remote",
-    summary:
-      "Built an end-to-end operations platform for dance and music academies.",
-    highlights: [
-      "Delivered enrollment, attendance, class scheduling, instructor management, reporting, and role-based access.",
-      "Engineered subscriptions and payments with Stripe, Apple In-App Purchase, and Google Play Billing.",
-      "Added notifications, reminders, and analytics for revenue, attendance, and student engagement.",
+      "Built an employee management app using GetX MVVM, role-based access, and payroll workflows.",
+      "Mentored 4 junior developers in Flutter, Kotlin, and Firebase to support production feature delivery.",
+      "Set up GitHub Actions CI/CD pipelines and handled performance optimization, crash monitoring, and maintenance of legacy Java and Kotlin Android apps.",
+      "Ashadhara: Developed a secure Kotlin healthcare app for people with haemophilia, implementing SSL pinning, root detection, code obfuscation, and screenshot restrictions.",
+      "Built a subscription-based academy management platform with enrollment, attendance, and scheduling, integrating Stripe, Apple In-App Purchase, and Google Play Billing.",
     ],
   },
 ];
@@ -51,32 +45,27 @@ const projects = [
     name: "CascadeMD",
     category: "Healthcare · AI documentation",
     description:
-      "An AI-powered clinical documentation platform processing 15,000+ submissions each month for a U.S. government healthcare service, with SOC 2-compliant workflows and 53% faster performance.",
+      "An AI-powered clinical documentation platform processing 15,000+ submissions each month for a U.S. government healthcare service, with SOC 2-compliant workflows and a 53% reduction in core workflow completion time.",
     tags: ["Flutter", "Clinical AI", "SOC 2", "RBAC"],
-    href: "https://dictate.cascade.md",
-    image: `${basePath}/projects/cascade.png`,
-    className: "project-cascade",
+    href: "https://cascade.md/",
   },
   {
     index: "02",
     name: "Seequince",
     category: "Field operations · Location intelligence",
     description:
-      "A field workforce monitoring application with refactored AI-generated code, GPS geofencing, background location tracking, scheduled processes, and Firebase notifications.",
+      "A field workforce monitoring application with refactored AI-generated code, GPS geofencing, background location tracking, scheduled processes, and Firebase notifications—improving core workflow completion time by 20%.",
     tags: ["Flutter", "Geofencing", "Background tasks", "Firebase"],
-    image: `${basePath}/projects/seequince.png`,
-    className: "project-seequince",
+    href: "https://www.seequince.com/",
   },
   {
     index: "03",
     name: "Sprinkle",
     category: "Sports · Consumer mobile",
     description:
-      "A cross-platform sports information app serving 5,000+ users, with a backend-driven sports system, authentication, payments, deep links, and location-aware features.",
+      "A cross-platform sports information app with 20,000+ downloads and 15,000+ active users, featuring a backend-driven sports system, authentication, payments, deep links, and location-aware features.",
     tags: ["Clean architecture", "Payments", "Deep links"],
-    href: "https://play.google.com/store/apps/details?id=com.lektik.sprinkle",
-    image: `${basePath}/projects/sprinkle.png`,
-    className: "project-sprinkle",
+    href: "https://sprinkle.bet/",
   },
   {
     index: "04",
@@ -86,39 +75,120 @@ const projects = [
       "An AI-powered biography platform serving 1,000+ users across mobile and web, with speech, multimedia, secure sign-in, and Azure hosting costs reduced by more than 90%.",
     tags: ["Android / iOS / Web", "Speech", "Azure", "AI"],
     href: "https://app.narraited.com",
-    image: `${basePath}/projects/narraited.png`,
-    className: "project-narraited",
   },
   {
     index: "05",
     name: "Ashadhara",
-    category: "Healthcare · Android security",
+    category: "Healthcare · Android security · Nov 2022–Feb 2023",
     description:
       "A healthcare app for hemophilia patients, designed for accessibility and hardened with SSL pinning, root detection, obfuscation, and screenshot protection.",
     tags: ["Kotlin", "SSL pinning", "Accessibility"],
-    image: `${basePath}/projects/ashadhara.png`,
-    className: "project-ashadhara",
+  },
+  {
+    index: "06",
+    name: "DAP — Drivers App",
+    category: "Reubro International · Nov–Dec 2022",
+    description:
+      "A job-matching app connecting heavy vehicle drivers with employers looking to hire.",
+    tags: [],
+  },
+  {
+    index: "07",
+    name: "Petty — Dating App",
+    category: "Reubro International · Apr–Dec 2022",
+    description: "A dating app designed around the familiar swipe-to-match experience.",
+    tags: [],
+  },
+  {
+    index: "08",
+    name: "Jiwok Coach",
+    category: "Reubro International · Jun–Nov 2022",
+    description: "A Java healthcare and sports coaching application.",
+    tags: ["Java"],
+  },
+  {
+    index: "09",
+    name: "KMRL Connect",
+    category: "Apr–Nov 2022",
+    description: "A business application for Kochi Metro Rail Limited.",
+    tags: [],
+  },
+  {
+    index: "10",
+    name: "Slogan",
+    category: "Reubro International · Aug 2022",
+    description: "A social app where companies can get slogan ideas for their brands.",
+    tags: [],
+  },
+  {
+    index: "11",
+    name: "Organisation Management App",
+    category: "Dec 2022–Nov 2023",
+    description: "A small-business management app for attendance, finance, and daily operations.",
+    tags: [],
+  },
+  {
+    index: "12",
+    name: "Greenwealth",
+    category: "Reubro International · Apr–Jul 2023",
+    description: "An e-commerce application.",
+    tags: [],
+  },
+  {
+    index: "13",
+    name: "Paytym",
+    category: "Reubro International · Oct 2022–Jul 2023",
+    description: "An employee and employer management application.",
+    tags: [],
+  },
+  {
+    index: "14",
+    name: "Esegate",
+    category: "Dec 2021–Feb 2022",
+    description: "An app for GATE students.",
+    tags: [],
   },
 ];
+
+function ProjectCard({ project }) {
+  const Tag = project.href ? "a" : "article";
+  const externalProps = project.href ? { href: project.href, target: "_blank", rel: "noreferrer" } : {};
+
+  return (
+    <Tag className="project-card" {...externalProps}>
+      <div className="project-card-heading">
+        <span className="project-number">{project.index}</span>
+        <div><h3>{project.name}</h3><p>{project.category}</p></div>
+        {project.href && <span className="project-arrow"><Arrow diagonal /></span>}
+      </div>
+      <p className="project-description">{project.description}</p>
+      <ul className="project-tags">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
+    </Tag>
+  );
+}
 
 const skillGroups = [
   {
     number: "01",
+    icon: "rocket",
     title: "Product engineering",
     skills: ["Flutter", "React", "FastAPI", "Tailwind CSS", "Jetpack Compose", "Responsive UI"],
   },
   {
     number: "02",
+    icon: "database",
     title: "Architecture & data",
     skills: ["BLoC", "Riverpod", "Provider", "GetX", "REST APIs", "GraphQL", "PostgreSQL", "Firebase"],
   },
   {
     number: "03",
+    icon: "cloud",
     title: "Cloud & delivery",
     skills: ["AWS ECS / ECR", "Azure App Service", "Docker", "GitHub Actions", "Codemagic", "App Store delivery"],
   },
   {
     number: "04",
+    icon: "puzzle",
     title: "Applied product systems",
     skills: ["AI integrations", "WebSockets", "Payments", "Geofencing", "Deep linking", "FCM", "Security"],
   },
@@ -147,6 +217,17 @@ function CodeMark() {
   );
 }
 
+function CapabilityIcon({ name }) {
+  const paths = {
+    rocket: <><path d="M14.8 3.2c2.3-1.3 4.7-1.5 6-1.5.1 1.3-.2 3.7-1.5 6l-5.1 8.1-5.3-5.3 5.9-7.3Z" /><path d="m9.1 10.5-4.3.7-2.3 2.3 5.4 1.1m4.3 1.2-.7 4.3-2.3 2.3-1.1-5.4" /><circle cx="16.7" cy="7.3" r="1.5" fill="white" /></>,
+    database: <><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v5c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 10v5c0 1.7 3.6 3 8 3s8-1.3 8-3v-5M4 15v4c0 1.7 3.6 3 8 3s8-1.3 8-3v-4" /></>,
+    cloud: <path d="M19 18H6a4 4 0 0 1-.5-8A6.5 6.5 0 0 1 18 8a5 5 0 0 1 1 10Z" />,
+    puzzle: <path d="M19 13h-2v-2a2 2 0 1 0-4 0v2h-2v-2H9a2 2 0 1 1-4 0V9H3V3h6v2a2 2 0 1 0 4 0V3h8v6h-2a2 2 0 1 0 0 4Zm-6 0v2a2 2 0 1 1-4 0v-2H7v2a2 2 0 1 1-4 0v-2H1v8h8v-2a2 2 0 1 1 4 0v2h8v-8h-2a2 2 0 1 1-4 0v-2h-2Z" />,
+  };
+
+  return <svg aria-hidden="true" viewBox="0 0 24 24">{paths[name]}</svg>;
+}
+
 export default function Home() {
   return (
     <main id="top">
@@ -167,32 +248,28 @@ export default function Home() {
 
       <section className="hero shell">
         <div className="hero-intro">
-          <p className="kicker"><span>Senior Software Engineer</span> Kerala, India</p>
+          <p className="kicker"><span>Senior Software Engineer</span><i /> Kerala, India</p>
           <h1>
-            Hi! I&apos;m <em>Akhil.</em><br />I build mobile &amp; web products.
+            I design and build<br /><em>digital products</em><br />that make an impact.
           </h1>
           <p className="hero-copy">
-            5+ years shipping cross-platform products across healthcare, AI, commerce, and enterprise workflows—with measurable gains in scale, speed, reliability, and cloud cost.
+            Cross-platform mobile and web applications for healthcare, AI, commerce and more.
           </p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#work">Explore selected work <Arrow /></a>
-            <a className="button button-secondary" href={`${basePath}/Senior-software-engineer.pdf`} download>Download résumé <Arrow diagonal /></a>
+            <a className="button button-primary" href="#work">See my work <Arrow /></a>
+            <a className="button button-secondary" href={`${basePath}/Akhil_software_engineer_cv.pdf`} download>Download résumé <span aria-hidden="true">↓</span></a>
           </div>
         </div>
 
         <aside className="hero-panel" aria-label="Portrait of Akhil V S">
-          <Image src={`${basePath}/hero-portrait-v2.png`} alt="Akhil V S in an orange sweatshirt" fill priority sizes="(max-width: 960px) 100vw, 42vw" />
-          <div className="portrait-ring ring-one" />
-          <div className="portrait-ring ring-two" />
-          <div className="profile-badge badge-top"><span>✦</span><div><strong>15K+ monthly</strong><small>Clinical submissions</small></div></div>
-          <div className="profile-badge badge-bottom tech-badge"><span>⌘</span><div><strong>Flutter · React · FastAPI</strong><small>Mobile · Web · APIs</small></div></div>
-          <div className="profile-orbit">30%<small>fewer crashes</small></div>
+          <Image src={`${basePath}/hero-portfolio-artwork.png`} alt="Akhil V S in a cream overshirt against a white background with soft blue shapes and technology notes" fill priority sizes="(max-width: 960px) 100vw, 60vw" />
         </aside>
 
         <div className="hero-stats" aria-label="Career highlights">
-          <div><strong>5+</strong><span>Years shipping<br />production software</span></div>
-          <div><strong>53%</strong><span>Performance gain<br />on CascadeMD</span></div>
-          <div><strong>90%+</strong><span>Azure hosting<br />cost reduction</span></div>
+          <div><strong>4.5+</strong><span>Years</span></div>
+          <div><strong>14+</strong><span>Products</span></div>
+          <div><strong>15K+</strong><span>Monthly Users</span></div>
+          <div><strong>53%</strong><span>Faster Workflow</span></div>
         </div>
       </section>
 
@@ -228,18 +305,16 @@ export default function Home() {
             <p>Production ownership, cross-functional delivery, and a growing responsibility for architecture and people.</p>
           </div>
           <div className="timeline">
-            {experiences.map((job, index) => (
+            {experiences.map((job) => (
               <article className="timeline-item" key={job.company}>
-                <div className="timeline-marker"><span>{String(index + 1).padStart(2, "0")}</span></div>
-                <div className="timeline-meta">
-                  <p>{job.period}</p>
-                  <span>{job.location}</span>
-                </div>
+                <div className="company-mark" aria-hidden="true">{job.mark}</div>
                 <div className="timeline-body">
+                  <div className="experience-meta"><span>{job.period}</span><span className="experience-location">{job.location}</span></div>
                   <h3>{job.role}</h3>
                   <h4>{job.company}</h4>
                   <p>{job.summary}</p>
                   <ul>{job.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
+                  <div className="experience-tags" aria-label="Technologies and focus areas">{job.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                 </div>
               </article>
             ))}
@@ -254,53 +329,31 @@ export default function Home() {
           <p>A selection of mobile and web products spanning high-trust workflows, consumer experiences, and real-world operations.</p>
         </div>
         <div className="project-grid">
-          {projects.map((project, index) => {
-            const Tag = project.href ? "a" : "article";
-            const externalProps = project.href ? { href: project.href, target: "_blank", rel: "noreferrer" } : {};
-            return (
-              <Tag className={`project-card ${project.className} ${index === 0 ? "project-featured" : ""}`} key={project.name} {...externalProps}>
-                <Image className="project-image" src={project.image} alt="" fill sizes={index === 0 ? "(max-width: 680px) 100vw, 1180px" : "(max-width: 680px) 100vw, 580px"} />
-                <div className="project-shade" />
-                <div className="project-top"><span>{project.index}</span>{project.href && <Arrow diagonal />}</div>
-                <div className="project-content">
-                  <p>{project.category}</p>
-                  <h3>{project.name}</h3>
-                  <div>{project.description}</div>
-                  <ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-                </div>
-              </Tag>
-            );
-          })}
+          {projects.slice(0, 6).map((project) => <ProjectCard project={project} key={project.name} />)}
         </div>
-        <div className="more-work">
-          <div className="more-work-heading">
-            <div>
-              <span>AND THERE&apos;S MORE</span>
-              <h3>10+ products shipped.</h3>
-            </div>
-            <strong>10+</strong>
-            <p>Across healthcare, AI, workforce operations, commerce, education, and public services.</p>
+        <details className="more-projects">
+          <summary><span className="more-projects-open">See more projects</span><span className="more-projects-close">Show fewer projects</span></summary>
+          <div className="project-grid">
+            {projects.slice(6).map((project) => <ProjectCard project={project} key={project.name} />)}
           </div>
-        </div>
+        </details>
       </section>
 
       <section className="skills section" id="skills">
         <div className="shell">
           <div className="section-index">04 / CAPABILITIES</div>
-          <div className="skills-layout">
-            <div className="skills-intro">
-              <h2>A practical<br /><span>toolkit.</span></h2>
-              <p>Chosen for the problem, grounded in production experience.</p>
-            </div>
-            <div className="skill-groups">
-              {skillGroups.map((group) => (
-                <article key={group.title}>
-                  <span>{group.number}</span>
-                  <h3>{group.title}</h3>
-                  <p>{group.skills.join(" · ")}</p>
-                </article>
-              ))}
-            </div>
+          <div className="section-title-row skills-heading">
+            <h2>A practical<br /><span>toolkit.</span></h2>
+            <p>Chosen for the problem, grounded in production experience.</p>
+          </div>
+          <div className="skill-groups">
+            {skillGroups.map((group) => (
+              <article key={group.title}>
+                <span className="skill-number">{group.number}</span>
+                <span className="skill-icon"><CapabilityIcon name={group.icon} /></span>
+                <div className="skill-copy"><h3>{group.title}</h3><p>{group.skills.join(" · ")}</p></div>
+              </article>
+            ))}
           </div>
           <div className="education">
             <span>Education</span>
@@ -323,7 +376,7 @@ export default function Home() {
         <div>
           <a href="https://www.linkedin.com/in/akhil15111993" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/akhil111993" target="_blank" rel="noreferrer">GitHub</a>
-          <a href={`${basePath}/Senior-software-engineer.pdf`}>Résumé</a>
+          <a href={`${basePath}/Akhil_software_engineer_cv.pdf`}>Résumé</a>
         </div>
       </footer>
     </main>
