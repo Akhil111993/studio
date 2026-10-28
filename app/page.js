@@ -10,9 +10,8 @@ const experiences = [
     period: "Sep 2023 — Present",
     location: "Infopark, Kakkanad",
     tags: ["Flutter", "React", "FastAPI", "AWS", "PostgreSQL", "SOC 2"],
-    summary:
-      "Lead a team of 3 engineers, driving architecture, code reviews, CI/CD, testing, and end-to-end delivery of Flutter, React, and FastAPI products through store release and post-release monitoring.",
     highlights: [
+      "Lead a team of 3 engineers, driving architecture, code reviews, CI/CD, testing, and end-to-end delivery of Flutter, React, and FastAPI products through store release and post-release monitoring.",
       "CascadeMD: Architected a cross-platform clinical documentation platform processing 15,000+ documents monthly for a U.S. government healthcare service, with role-based access, secure clinical workflows, and healthcare integrations supporting SOC 2 compliance.",
       "Reduced a core clinical workflow's completion time by 53% (49 seconds to 23 seconds) through state management improvements, API optimization, and cross-platform performance work.",
       "Sprinkle: Built a Flutter sports app with 20,000+ downloads and 15,000+ active users. Its backend-driven architecture lets new sports be added without frontend code changes; integrated authentication, payments, and deep links.",
@@ -27,9 +26,8 @@ const experiences = [
     period: "Apr 2022 — Aug 2023",
     location: "Kochi, Kerala",
     tags: ["Flutter", "Firebase", "REST APIs", "Stripe", "Payments"],
-    summary:
-      "Delivered 5+ Flutter applications across Android, iOS, and Web, spanning e-commerce, social networking, job search, and employee management.",
     highlights: [
+      "Delivered 5+ Flutter applications across Android, iOS, and Web, spanning e-commerce, social networking, job search, and employee management.",
       "Built an employee management app using GetX MVVM, role-based access, and payroll workflows.",
       "Mentored 4 junior developers in Flutter, Kotlin, and Firebase to support production feature delivery.",
       "Set up GitHub Actions CI/CD pipelines and handled performance optimization, crash monitoring, and maintenance of legacy Java and Kotlin Android apps.",
@@ -312,7 +310,6 @@ export default function Home() {
                   <div className="experience-meta"><span>{job.period}</span><span className="experience-location">{job.location}</span></div>
                   <h3>{job.role}</h3>
                   <h4>{job.company}</h4>
-                  <p>{job.summary}</p>
                   <ul>{job.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
                   <div className="experience-tags" aria-label="Technologies and focus areas">{job.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                 </div>
