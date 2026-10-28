@@ -354,8 +354,8 @@ export default function Home() {
           </div>
           <div className="education">
             <span>Education</span>
-            <p><strong>Master of Computer Applications</strong> · Indira Gandhi National Open University · 2026</p>
-            <p><strong>B.Tech, Mechanical Engineering</strong> · Universal Engineering College · 2016</p>
+            <p><strong>Master of Computer Applications</strong> Indira Gandhi National Open University · 2026</p>
+            <p><strong>B.Tech, Mechanical Engineering</strong> Universal Engineering College · 2016</p>
           </div>
         </div>
       </section>
